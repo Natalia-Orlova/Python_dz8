@@ -1,15 +1,16 @@
 import csv
 from os import path
 
-
-had = [["first_name", "second_name", "Grade", "Faculty"],
-        ['Harry', 'Potter', '1', 'Gryffindor'],
-        ['Ronald', 'Weasley', '1', 'Gryffindor'],
-        ['Hermione', 'Granger', '1', 'Gryffindor'],
-        ['Draco', 'Malfoy', '1', 'Slytherin']]
-with open('students.csv', 'a') as myFile:
-        writer = csv.writer(myFile)
-        writer.writerows(had)
+def fill_s():
+    had = [["first_name", "second_name", "Grade", "Faculty"],
+            ['Harry', 'Potter', '1', 'Gryffindor'],
+            ['Ronald', 'Weasley', '1', 'Gryffindor'],
+            ['Hermione', 'Granger', '1', 'Gryffindor'],
+            ['Draco', 'Malfoy', '1', 'Slytherin']]
+    with open('students.csv', 'a') as myFile:
+            writer = csv.writer(myFile)
+            writer.writerows(had)
+    return
 
 def get_s():
     students = []
